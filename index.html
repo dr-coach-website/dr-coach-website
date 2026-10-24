@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DR & COACH | دكتور آند كوتش - للتغذية الرياضية والتدريب الاحترافي</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شريط الإعلانات العلوي -->
+  <div class="announcement-bar">
+    <span>🏆 المنصة الأولى التي تجمع بين التغذية العلاجية والتدريب الرياضي برؤية طبية</span>
+    <span class="badge">خصومات لفترة محدودة على كافة الباقات</span>
+  </div>
+
+  <!-- القائمة العلوية Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="brand-wrapper">
+        <img src="assets/logo.png" alt="DR & COACH Logo" class="brand-logo brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title dyn-brand-name">DR & COACH</span>
+          <span class="brand-tagline dyn-brand-tagline">تغذية علاجية وتدريب احترافي</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">الرئيسية</a></li>
+        <li><a href="#humanSection">البرامج البشرية (رياضي وتغذوي)</a></li>
+        <li><a href="#aiSection">مساعد الذكاء الاصطناعي</a></li>
+        <li><a href="#calculatorSection">حاسبة السعرات</a></li>
+        <li><a href="#faqSection">الأسئلة الشائعة</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="btn-primary dyn-wa-link">
+          <i class="fab fa-whatsapp"></i> تواصل واتساب
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- القسم الترحيبي Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-certificate"></i> إشراف طبي وتدريبي مزدوج معتمد
+        </div>
+        <h1 class="hero-title">
+          صحتك ولياقتك برؤية <span class="highlight-green">طبية متخصصة</span> وتدريب احترافي
+        </h1>
+        <p class="hero-desc dyn-brand-desc">
+          المنصة الأولى التي تجمع بين التغذية العلاجية السريرية والتدريب الرياضي الاحترافي المبني على أسس علمية لتحقيق أفضل فورمة وصحة مستدامة بدون حرمان.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#humanSection" class="btn-primary" style="padding: 13px 28px; font-size: 1rem;">
+            <i class="fas fa-user-md"></i> استكشف الباقات البشرية
+          </a>
+          <a href="#aiSection" class="btn-outline" style="padding: 13px 26px; font-size: 1rem;">
+            <i class="fas fa-robot"></i> اسأل الذكاء الاصطناعي مجاناً
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">+1,000</span>
+            <span class="stat-label">قصة تحول ناجحة</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">أنظمة مخصصة لجسمك</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">دعم ومتابعة مستمرة</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="floating-badge badge-top">
+            <i class="fas fa-heartbeat" style="color: #10b981;"></i> خطط تغذية علاجية دقيقة
+          </div>
+
+          <div class="hero-main-card">
+            <div class="hero-logo-box">
+              <img src="assets/logo.png" alt="DR & COACH" class="brand-logo-img">
+            </div>
+            <h3 style="font-weight: 900; color: #0c233c; margin-bottom: 6px;">DR & COACH</h3>
+            <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 15px;">الجمع بين العلم الطبي وقوة التدريب الرياضي</p>
+
+            <div class="hero-pillars-pill">
+              <div class="pillar-chip human">
+                <i class="fas fa-user-shield"></i> تدريب بشري مباشر
+              </div>
+              <div class="pillar-chip ai">
+                <i class="fas fa-brain"></i> ذكاء اصطناعي فوري
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <i class="fas fa-dumbbell" style="color: #2563eb;"></i> برامج تدريب وبناء عضلي
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط التبديل السريع بين القسمين الأساسيين -->
+  <section class="main-switch-section">
+    <div class="container switch-container">
+      <button class="main-tab-btn human-btn active" id="tabBtnHuman">
+        <i class="fas fa-users-cog"></i>
+        <span>1. قسم التدريب والاستشارة البشرية (رياضي وتغذوي)</span>
+      </button>
+      <button class="main-tab-btn ai-btn" id="tabBtnAI">
+        <i class="fas fa-microchip"></i>
+        <span>2. قسم الذكاء الاصطناعي (Google AI المباشر)</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- القسم الأول: التدريب والاستشارات البشرية (Human Coaching & Programs)     -->
+  <!-- ========================================================================= -->
+  <section class="section" id="humanSection">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">إشراف ومتابعة حقيقية 1-on-1</span>
+        <h2 class="section-title">برامج التدريب والتغذية البشرية</h2>
+        <p class="section-desc">
+          برامج مخصصة بالكامل لجسمك وقياساتك، بإشراف مباشر من دكتور التغذية العلاجية وكوتش التدريب الرياضي خطوة بخطوة.
+        </p>
+      </div>
+
+      <!-- الباقة الكبرى الشاملة VIP (دكتور + كوتش) -->
+      <div class="vip-card-wrapper" id="vipProgramContainer">
+        <!-- يتم تحميلها تلقائياً من ملف config.js -->
+      </div>
+
+      <!-- أزرار الاختيار: برامج رياضية أو برامج تغذوية -->
+      <div class="sub-tabs-container">
+        <button class="sub-tab-btn active" data-target="sports">
+          <i class="fas fa-dumbbell"></i> البرامج الرياضية (جدول التمارين والجيم)
+        </button>
+        <button class="sub-tab-btn" data-target="nutrition">
+          <i class="fas fa-apple-alt"></i> البرامج التغذوية (الأنظمة الغذائية والعلاجية)
+        </button>
+        <button class="sub-tab-btn" data-target="all">
+          <i class="fas fa-th-large"></i> عرض جميع البرامج
+        </button>
+      </div>
+
+      <!-- شبكة بطاقات البرامج -->
+      <div class="programs-grid" id="programsGrid">
+        <!-- يتم تعبئة البرامج تلقائياً من config.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- القسم الثاني: استشارات الذكاء الاصطناعي (Google Gemini AI)                 -->
+  <!-- ========================================================================= -->
+  <section class="section ai-section" id="aiSection">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" style="background: #dbeafe; color: #1d4ed8;">مساعدك الذكي 24/7</span>
+        <h2 class="section-title">استشارات الذكاء الاصطناعي الرياضية والتغذوية</h2>
+        <p class="section-desc">
+          اطرح أي سؤال حول التغذية الرياضية، السعرات، البروتين، أو التمارين، وسيجيبك المساعد الذكي فوراً وبدقة علمية عالية.
+        </p>
+      </div>
+
+      <div class="ai-container-grid">
+        
+        <!-- صندوق المحادثة التفاعلي -->
+        <div class="ai-chat-card">
+          <div class="ai-chat-header">
+            <div class="ai-header-left">
+              <div class="ai-avatar">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="ai-header-titles">
+                <h4>مساعد DR & COACH الذكي</h4>
+                <div class="ai-status-indicator">
+                  <span class="status-dot"></span>
+                  <span id="geminiKeyStatus">متصل ومستعد للإجابة</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span style="font-size: 0.78rem; background: rgba(255,255,255,0.18); padding: 4px 10px; border-radius: 20px;">
+                <i class="fab fa-google"></i> Powered by Google AI
+              </span>
+            </div>
+          </div>
+
+          <!-- مساحة الرسائل -->
+          <div class="ai-chat-body" id="aiChatBody">
+            <div class="chat-bubble bot">
+              👋 مرحباً بك! أنا المساعد الذكي لمنصة <strong>DR & COACH</strong>. 
+              يسعدني مساعدتك في الإجابة على أي استفسار يخص التغذية الرياضية، خسارة الدهون، بناء العضلات، أو المكملات الغذائية. 
+              <br><br>
+              <strong>جرّب الأسئلة السريعة أدناه أو اكتب سؤالك الخاص مباشرة!</strong>
+            </div>
+          </div>
+
+          <!-- أزرار الأسئلة السريعة الجاهزة -->
+          <div class="ai-quick-questions">
+            <button class="quick-q-btn" data-question="كيف أحسب احتياجي اليومي من البروتين لبناء العضلات؟">
+              🥩 احتياج البروتين
+            </button>
+            <button class="quick-q-btn" data-question="ما هي أفضل وجبة متكاملة قبل التمرين وبعد التمرين؟">
+              🥗 وجبات قبل وبعد التمرين
+            </button>
+            <button class="quick-q-btn" data-question="كيف أنشف دهون جسمي بدون خسارة الكتلة العضلية؟">
+              🔥 قواعد التنشيف الصحي
+            </button>
+            <button class="quick-q-btn" data-question="ما هي الجرعة الصحيحة وطريقة استخدام الكرياتين؟">
+              ⚡ مكمل الكرياتين
+            </button>
+            <button class="quick-q-btn" data-question="وزني ثابت رغم الالتزام بالدايت، ما هو السبب والحل؟">
+              🩺 علاج ثبات الوزن
+            </button>
+          </div>
+
+          <!-- شريط إدخال الرسالة -->
+          <div class="ai-chat-input-bar">
+            <input type="text" id="aiChatInput" placeholder="اكتب سؤالك الرياضي أو التغذوي هنا واضغط Enter..." autocomplete="off">
+            <button class="btn-send-ai" id="btnSendAi" title="إرسال السؤال">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- الشريط الجانبي التوضيحي للذكاء الاصطناعي -->
+        <div class="ai-sidebar">
+          
+          <div class="ai-info-card">
+            <h5><i class="fas fa-plug" style="color: #2563eb;"></i> ربط Google Gemini</h5>
+            <p>
+              هذا القسم مهيأ بالكامل للربط مع أحدث نماذج <strong>Google Gemini AI</strong> لتقديم إجابات ذكية فورية ودقيقة.
+            </p>
+            <div class="config-highlight-box">
+              ⚙️ للتفعيل الحي: افتح ملف <code>config.js</code> وضع كود مفتاحك في:
+              <br><code>geminiAI.apiKey: "..."</code>
+            </div>
+            <small style="color: #64748b;">
+              * يعمل الشات حالياً بمحرك الردود الذكية المدمج ويمكنك تجربة أي سؤال فوراً!
+            </small>
+          </div>
+
+          <div class="ai-info-card">
+            <h5><i class="fas fa-user-check" style="color: #00884d;"></i> تحتاج خطة مفصلة لجسمك؟</h5>
+            <p>
+              الذكاء الاصطناعي يقدم إرشادات عامة ممتازة، ولكن للوصول إلى أدق النتائج وحل مشاكلك الصحية ببرنامج مفصل لك، ننصحك بالاشتراك في <strong>البرامج البشرية</strong> بإشراف الدكتور والكوتش مباشرة.
+            </p>
+            <a href="#humanSection" class="btn-primary" style="width: 100%; justify-content: center; font-size: 0.88rem;">
+              <i class="fas fa-arrow-up"></i> الانتقال للباقات البشرية
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- أداة إضافية حصرية: حاسبة السعرات الحرارية والماكروز (TDEE Calculator)       -->
+  <!-- ========================================================================= -->
+  <section class="section calculator-section" id="calculatorSection">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">أداة مجانية للزوار</span>
+        <h2 class="section-title">حاسبة السعرات والماكروز الاحترافية</h2>
+        <p class="section-desc">
+          احسب احتياج جسمك اليومي من السعرات والبروتين والنشويات والدهون حسب معادلة (Mifflin-St Jeor) الطبية المعتمدة عالمياً.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-grid">
+          
+          <!-- نموذج إدخال البيانات -->
+          <form id="calorieCalcForm">
+            <div class="form-group">
+              <label for="calcGender"><i class="fas fa-venus-mars"></i> الجنس:</label>
+              <select id="calcGender">
+                <option value="male">ذكر (Male)</option>
+                <option value="female">أنثى (Female)</option>
+              </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div class="form-group">
+                <label for="calcAge"><i class="far fa-calendar-alt"></i> العمر (سنة):</label>
+                <input type="number" id="calcAge" placeholder="مثال: 26" value="25" required min="10" max="100">
+              </div>
+              <div class="form-group">
+                <label for="calcWeight"><i class="fas fa-weight"></i> الوزن (كجم):</label>
+                <input type="number" id="calcWeight" placeholder="مثال: 75" value="75" required min="30" max="250">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="calcHeight"><i class="fas fa-ruler-vertical"></i> الطول (سم):</label>
+              <input type="number" id="calcHeight" placeholder="مثال: 175" value="175" required min="100" max="230">
+            </div>
+
+            <div class="form-group">
+              <label for="calcActivity"><i class="fas fa-running"></i> مستوى النشاط الأسبوعي:</label>
+              <select id="calcActivity">
+                <option value="1.2">خامل (عمل مكتبي بدون رياضة)</option>
+                <option value="1.375">نشاط خفيف (تمرين 1-3 أيام أسبوعياً)</option>
+                <option value="1.55" selected>نشاط متوسط (تمرين جيم 3-5 أيام أسبوعياً)</option>
+                <option value="1.725">نشاط عالي (تمرين مكثف 6-7 أيام أسبوعياً)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calcGoal"><i class="fas fa-bullseye"></i> هدفك الحالي:</label>
+              <select id="calcGoal">
+                <option value="cut">حرق دهون وتنشيف (-450 سعرة)</option>
+                <option value="maintain">تثبيت الوزن الحالي والحفاظ عليه</option>
+                <option value="bulk">بناء عضلات وضخامة (+350 سعرة)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px;">
+              <i class="fas fa-calculator"></i> احسب احتياجي والماكروز الآن
+            </button>
+          </form>
+
+          <!-- بطاقة عرض النتائج -->
+          <div class="calc-result-box">
+            <span class="calc-result-title">احتياجك اليومي المقترح من الطاقة:</span>
+            <div class="calc-result-number" id="calcResultCalories">2,250 سعرة</div>
+            <div id="calcResultBMI" style="font-size: 0.88rem; color: #a7f3d0; margin-bottom: 15px;">
+              مؤشر الكتلة (BMI): 24.5
+            </div>
+
+            <p style="font-size: 0.82rem; color: #cbd5e1;">التوزيع المقترح للمغذيات الكبرى (الماكروز):</p>
+
+            <div class="macros-distribution">
+              <div class="macro-item">
+                <span style="color: #34d399;">🥩 البروتين</span>
+                <span class="macro-val" id="calcResultProtein">150 جم</span>
+              </div>
+              <div class="macro-item">
+                <span style="color: #60a5fa;">🍚 النشويات</span>
+                <span class="macro-val" id="calcResultCarbs">240 جم</span>
+              </div>
+              <div class="macro-item">
+                <span style="color: #facc15;">🥑 الدهون الصحية</span>
+                <span class="macro-val" id="calcResultFat">64 جم</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <a href="#" class="btn-outline dyn-wa-link" style="border-color: #34d399; color: #34d399; font-size: 0.85rem; padding: 8px 16px;">
+                <i class="fab fa-whatsapp"></i> استشر الدكتور حول نتيجتك
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- قسم الأسئلة الشائعة (FAQ)                                                  -->
+  <!-- ========================================================================= -->
+  <section class="section faq-section" id="faqSection">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">استفسارات متكررة</span>
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+        <p class="section-desc">إليك الإجابات على أهم التساؤلات التي يطرحها المشتركون قبل البدء معنا.</p>
+      </div>
+
+      <div class="faq-list" id="faqContainer">
+        <!-- يتم التحميل تلقائياً من config.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- الفوتر (Footer) ومعلومات التواصل وروابط السوشيال                           -->
+  <!-- ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      
+      <!-- العمود الأول: الشعار والنبذة -->
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="DR & COACH" class="brand-logo brand-logo-img">
+        <p class="dyn-brand-desc">
+          المنصة الأولى التي تجمع بين التغذية العلاجية السريرية والتدريب الرياضي الاحترافي المبني على أسس علمية لتحقيق أفضل فورمة وصحة مستدامة.
+        </p>
+        <div class="social-links dyn-social-container">
+          <!-- يتم عرض السوشيال ميديا ديناميكياً من config.js -->
+        </div>
+      </div>
+
+      <!-- العمود الثاني: روابط سريعة -->
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#humanSection">البرامج الرياضية</a></li>
+          <li><a href="#humanSection">البرامج التغذوية</a></li>
+          <li><a href="#aiSection">استشارة الذكاء الاصطناعي</a></li>
+          <li><a href="#calculatorSection">حاسبة السعرات الحرارية</a></li>
+        </ul>
+      </div>
+
+      <!-- العمود الثالث: وسائل الدفع المعتمدة -->
+      <div class="footer-col">
+        <h4>وسائل الدفع المقبولة</h4>
+        <ul class="footer-links">
+          <li><i class="fas fa-bolt" style="color: #a855f7;"></i> إنستاباي (InstaPay)</li>
+          <li><i class="fas fa-mobile-alt" style="color: #ef4444;"></i> فودافون كاش ومحافظ الهاتف</li>
+          <li><i class="fas fa-university" style="color: #38bdf8;"></i> تحويل بنكي وحسابات IBAN</li>
+          <li><i class="fas fa-credit-card" style="color: #34d399;"></i> فيزا وماستركارد وميزة</li>
+          <li><i class="fas fa-globe" style="color: #f59e0b;"></i> PayPal للمشتركين خارج مصر</li>
+        </ul>
+      </div>
+
+      <!-- العمود الرابع: بيانات التواصل -->
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <ul class="footer-links">
+          <li><i class="fas fa-phone-alt"></i> <span class="dyn-phone">+20 100 000 0000</span></li>
+          <li><i class="fas fa-envelope"></i> <span class="dyn-email">info@drandcoach.com</span></li>
+          <li><i class="fas fa-map-marker-alt"></i> <span class="dyn-location">القاهرة، مصر (خدمات أونلاين عالمية)</span></li>
+        </ul>
+        <div style="margin-top: 15px;">
+          <a href="#" class="btn-primary dyn-wa-link" style="padding: 8px 16px; font-size: 0.85rem; width: 100%; justify-content: center;">
+            <i class="fab fa-whatsapp"></i> محادثة واتساب سريعة
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 جميع الحقوق محفوظة لـ <strong class="dyn-brand-name">DR & COACH</strong> | دكتور تغذية علاجية & كوتش تدريب رياضي</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- زر الواتساب العائم في أسفل الشاشة (Floating WhatsApp Button)              -->
+  <!-- ========================================================================= -->
+  <a href="#" class="floating-whatsapp dyn-wa-link" id="floatingWhatsApp" title="تواصل معنا عبر واتساب">
+    <div class="whatsapp-tooltip">تحدث مباشرة مع الكوتش</div>
+    <div class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+  </a>
+
+  <!-- ========================================================================= -->
+  <!-- نافذة وسائل الدفع المنبثقة (Payment Modal Popup)                          -->
+  <!-- ========================================================================= -->
+  <div class="modal-overlay" id="paymentModalOverlay">
+    <div class="payment-modal">
+      <div class="modal-header">
+        <h3><i class="fas fa-shield-alt"></i> وسائل الدفع وتأكيد الاشتراك</h3>
+        <button class="btn-close-modal" id="btnClosePaymentModal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- تفاصيل الباقة المختارة -->
+        <div class="selected-plan-banner">
+          <div class="plan-info-mini">
+            <span style="font-size: 0.78rem; color: #16a34a; font-weight: 700;">الباقة المختارة للاشتراك:</span>
+            <h5 id="modalSelectedPlanName">باقة التدريب والتغذية</h5>
+          </div>
+          <div class="plan-price-mini" id="modalSelectedPlanPrice">800 ج.م</div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 16px;">
+          اختر وسيلة الدفع الأنسب لك من الطرق المعتمدة التالية، ثم اضغط على زر إرسال الإشعار لتفعيل اشتراكك:
+        </p>
+
+        <!-- قائمة وسائل الدفع (تحمل ديناميكياً من config.js) -->
+        <div class="payment-methods-list" id="paymentMethodsContainer"></div>
+
+        <!-- زر إرسال الإشعار عبر الواتساب -->
+        <div class="modal-footer">
+          <button class="btn-primary" id="btnConfirmPaymentWa" style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
+            <i class="fab fa-whatsapp" style="font-size: 1.25rem;"></i> أرسل إيصال التحويل عبر واتساب للتفعيل الفوري
+          </button>
+          <small style="display: block; color: #94a3b8; margin-top: 8px; font-size: 0.75rem;">
+            * سيتم التواصل معك مباشرة وإرسال استمارة التقييم والبدء في تصميم البرنامج الخاص بك فوراً.
+          </small>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- سكربت الإعدادات أولاً ثم المحرك -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
